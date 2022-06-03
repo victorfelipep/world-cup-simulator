@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>2022 Qatar World Cup Simulator</title>
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/resultados.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-sm navbar-dark">
+				<div class="container">
+			        <a href="#" class="navbar-brand mx-auto" ><img src="img/qatar-cup.png"/></a>
+		        </div>
+		    </nav>
+		</header>
+
+		<section id="start-section"><!-- FIRST SECTION -->
+			<div class="container text-light text-center">
+				<h1 class="display-3">
+					Welcome to the 2022 world cup simulator!
+				</h1>
+				<h2>
+					Make your own 2022 football World Cup dream results!
+				</h2>
+				<div class="text-center">
+					<button class="btn btn-lg btn-primary start-btn">
+						START NOW
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="d-none" id="groups-section"><!-- GROUPS SECTION -->
+			<div class="container text-light">
+				<h1 class="display-5 text-center instruction">
+					Pick the first and the second place teams from each group
+				</h1>
+				<div class="row">
+					<div class="col-12 col-md-3 mt-4"><!-- GRUPO A -->
+						<table class="bg-light mx-auto">
+							<th class="bg-dark text-center">
+								GROUP A
+							</th>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="QAT">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="ECU">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="SEN">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="NED">
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div><!-- FIM GRUPO A -->
+
+					<div class="col-12 col-md-3 mt-4"><!-- GRUPO B -->
+						<table class="bg-light mx-auto">
+							<th class="bg-dark text-center">
+								GROUP B
+							</th>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="ENG">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="IRN">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="USA">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="EUR">
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div><!-- FIM GRUPO B -->
+
+					<div class="col-12 col-md-3 mt-4"><!-- GRUPO C -->
+						<table class="bg-light mx-auto">
+							<th class="bg-dark text-center">
+								GROUP C
+							</th>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="ARG">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="KSA">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="MEX">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="POL">
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div><!-- FIM GRUPO C -->
+
+					<div class="col-12 col-md-3 mt-4"><!-- GRUPO D -->
+						<table class="bg-light mx-auto">
+							<th class="bg-dark text-center">
+								GROUP D
+							</th>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="FRA">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="IC1">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="DEN">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="TUN">
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div><!-- FIM GRUPO D -->
+				</div>
+
+				<div class="row">
+					<div class="col-12 col-md-3 mt-4"><!-- GRUPO E -->
+						<table class="bg-light mx-auto">
+							<th class="bg-dark text-center">
+								GROUP E
+							</th>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="ESP">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="IC2">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="GER">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="JPN">
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div><!-- FIM GRUPO E -->
+
+					<div class="col-12 col-md-3 mt-4"><!-- GRUPO F -->
+						<table class="bg-light mx-auto">
+							<th class="bg-dark text-center">
+								GROUP F
+							</th>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="BEL">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="CAN">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="MAR">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="CRO">
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div><!-- FIM GRUPO F -->
+
+					<div class="col-12 col-md-3 mt-4"><!-- GRUPO G -->
+						<table class="bg-light mx-auto">
+							<th class="bg-dark text-center">
+								GROUP G
+							</th>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="BRA">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="SRB">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="SWI">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="CMR">
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div><!-- FIM GRUPO G -->
+
+					<div class="col-12 col-md-3 mt-4"><!-- GRUPO H -->
+						<table class="bg-light mx-auto">
+							<th class="bg-dark text-center">
+								GROUP H
+							</th>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="POR">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="GHA">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="URU">
+									</div>
+								</td>
+							</tr>
+							<tr class="text-black">
+								<td>
+									<div class="country" id="KOR">
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div><!-- FIM GRUPO H -->
+				</div>
+				<div class="row mt-5">
+					<div class="col-12 col-md-6 text-center mb-2">
+						<button class="btn btn-lg btn-danger reset-btn" id="reset-btn-1">
+							RESET
+						</button>
+					</div>
+					<div class="col-12 col-md-6 text-center">
+						<button class="btn btn-lg btn-info continue-btn">
+							KNOCKOUT STAGE
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="playoff-section" class="d-none"> <!-- PLAYOFFS SECTION -->
+			<div class="container">
+				<h1 class="display-5 text-center text-light instruction">
+					Knockout stage! Pick the winner from each game till the grand finals!
+				</h1>
+				<div class="mt-5 ro16"><!-- ROUND OF 16 -->
+					<h1 class="display-6 text-white">Round of 16</h1>
+
+					<div class="playoff-match text-center mt-1">
+							<div class="d-inline po-country mx-lg-5" id="r16-0-0">
+							</div>
+							<span> X </span>
+							<div class="d-inline po-country mx-lg-5" id="r16-0-1">
+							</div>
+					</div>
+
+					<div class="playoff-match text-center mt-1">
+						<div class="d-inline po-country mx-lg-5" id="r16-1-0">
+						</div>
+						<span> X </span>
+						<div class="d-inline po-country mx-lg-5" id="r16-1-1">
+						</div>
+					</div>
+
+					<div class="playoff-match text-center mt-1">
+						<div class="d-inline po-country mx-lg-5" id="r16-2-0">
+						</div>
+						<span> X </span>
+						<div class="d-inline po-country mx-lg-5" id="r16-2-1">
+						</div>
+					</div>
+
+					<div class="playoff-match text-center mt-1">
+						<div class="d-inline po-country mx-lg-5" id="r16-3-0">
+						</div>
+						<span> X </span>
+						<div class="d-inline po-country mx-lg-5" id="r16-3-1">
+						</div>
+					</div>
+
+					<div class="playoff-match text-center mt-1">
+						<div class="d-inline po-country mx-lg-5" id="r16-4-0">
+						</div>
+						<span> X </span>
+						<div class="d-inline po-country mx-lg-5" id="r16-4-1">
+						</div>
+					</div>
+
+					<div class="playoff-match text-center mt-1">
+						<div class="d-inline po-country mx-lg-5" id="r16-5-0">
+						</div>
+						<span> X </span>
+						<div class="d-inline po-country mx-lg-5" id="r16-5-1">
+						</div>
+					</div>
+
+					<div class="playoff-match text-center mt-1">
+						<div class="d-inline po-country mx-lg-5" id="r16-6-0">
+						</div>
+						<span> X </span>
+						<div class="d-inline po-country mx-lg-5" id="r16-6-1">
+						</div>
+					</div>
+
+					<div class="playoff-match text-center mt-1">
+						<div class="d-inline po-country mx-lg-5" id="r16-7-0">
+						</div>
+						<span> X </span>
+						<div class="d-inline po-country mx-lg-5" id="r16-7-1">
+						</div>
+					</div>
+					
+					<div class="text-center">
+						<button class="mt-3 d-none btn btn-lg btn-info w-50" id="done-btn-1">
+							ROUND OF 16 DONE!
+						</button>
+					</div>
+				</div>
+
+				<div class="qf mt-3"><!-- QUARTER-FINALS-->
+					<h1 class="display-6 text-white">Quarter-finals</h1>
+
+					<div class="playoff-match text-center mt-1">
+						<div class="d-inline po-country mx-lg-5" id="qf-0-0">
+						</div>
+						<span> X </span>
+						<div class="d-inline po-country mx-lg-5" id="qf-0-1">
+						</div>
+					</div>
+
+					<div class="playoff-match text-center mt-1">
+						<div class="d-inline po-country mx-lg-5" id="qf-1-0">
+						</div>
+						<span> X </span>
+						<div class="d-inline po-country mx-lg-5" id="qf-1-1">
+						</div>
+					</div>
+
+					<div class="playoff-match text-center mt-1">
+						<div class="d-inline po-country mx-lg-5" id="qf-2-0">
+						</div>
+						<span> X </span>
+						<div class="d-inline po-country mx-lg-5" id="qf-2-1">
+						</div>
+					</div>
+
+					<div class="playoff-match text-center mt-1">
+						<div class="d-inline po-country mx-lg-5" id="qf-3-0">
+						</div>
+						<span> X </span>
+						<div class="d-inline po-country mx-lg-5" id="qf-3-1">
+						</div>
+					</div>
+
+					<div class="text-center">
+						<button class="mt-3 d-none btn btn-lg btn-info w-50" id="done-btn-2">
+							QUARTER-FINALS DONE!
+						</button>
+					</div>
+
+				</div>
+
+				<div class="sf mt-3">
+					<!-- SEMI-FINALS-->
+					<h1 class="display-6 text-white">Semi-finals</h1>
+				
+					<div class="playoff-match text-center mt-1">
+						<div class="d-inline po-country mx-lg-5" id="sf-0-0">
+						</div>
+						<span> X </span>
+						<div class="d-inline po-country mx-lg-5" id="sf-0-1">
+						</div>
+					</div>
+				
+					<div class="playoff-match text-center mt-1">
+						<div class="d-inline po-country mx-lg-5" id="sf-1-0">
+						</div>
+						<span> X </span>
+						<div class="d-inline po-country mx-lg-5" id="sf-1-1">
+						</div>
+					</div>
+
+					<div class="text-center">
+						<button class="mt-3 d-none btn btn-lg btn-info w-50" id="done-btn-3">
+							SEMI-FINALS DONE!
+						</button>
+					</div>
+				</div>
+
+				<div class="fn mt-3 mb-5">
+					<!-- FINAL -->
+					<h1 class="display-6 text-white">Final</h1>
+				
+					<div class="playoff-match text-center mt-1">
+						<div class="d-inline po-country mx-lg-5" id="fn-0-0">
+						</div>
+						<span> X </span>
+						<div class="d-inline po-country mx-lg-5" id="fn-0-1">
+						</div>
+					</div>
+				
+				</div>
+
+				<div class="row">
+					<div class="col-12 text-center mb-2">
+						<button class="btn btn-lg btn-danger reset-btn" id="reset-btn-2">
+							REDO SIMULATION
+						</button>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section id="winner-section" class="d-none"><!-- WINNER SECTION -->
+
+			<div class="container text-center text-white">
+				<h1 class="display-5">The winner is</h1>
+
+				<p class="display-3 mt-5" id="winner">
+				</p>
+				
+				<div class="row mt-5">
+					<div class="col-12 col-md-6 text-center mb-2">
+						<button class="btn btn-lg btn-danger replay-btn">
+							NEW SIMULATION
+						</button>
+					</div>
+					<div class="col-12 col-md-6 text-center mb-2">
+						<button class="btn btn-lg btn-success results-btn">
+							SEE ALL THE RESULTS
+						</button>
+					</div>
+				</div>
+				<div class="text-center mb-2">
+					<button class="btn btn-lg btn-danger replay-btn d-none">
+						NEW SIMULATION
+					</button>
+				</div>
+			</div>
+
+		</section>
+
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</body>
+</html>
