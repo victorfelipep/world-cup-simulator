@@ -1093,7 +1093,7 @@ $('#r16-0-0, #r16-0-1, #r16-1-0, #r16-1-1, #r16-2-0, #r16-2-1, #r16-3-0, #r16-3-
 			&& ($('#r16-6-0').hasClass('selected') || $('#r16-6-1').hasClass('selected'))
 			&& ($('#r16-7-0').hasClass('selected') || $('#r16-7-1').hasClass('selected'))
 		){
-			$('#done-btn-1').toggleClass('d-none')
+			$('#done-btn-1').removeClass('d-none')
 		}
 	}, delay)
 
@@ -1262,7 +1262,7 @@ $('#qf-0-0, #qf-0-1, #qf-1-0, #qf-1-1, #qf-2-0, #qf-2-1, #qf-3-0, #qf-3-1').clic
 			&& ($('#qf-2-0').hasClass('selected') || $('#qf-2-1').hasClass('selected'))
 			&& ($('#qf-3-0').hasClass('selected') || $('#qf-3-1').hasClass('selected'))
 		){
-			$('#done-btn-2').toggleClass('d-none')
+			$('#done-btn-2').removeClass('d-none')
 		}
 	}, delay)
 
@@ -1356,7 +1356,7 @@ $('#sf-0-0, #sf-0-1, #sf-1-0, #sf-1-1').click(()=>{
 			($('#sf-0-0').hasClass('selected') || $('#sf-0-1').hasClass('selected'))
 			&& ($('#sf-1-0').hasClass('selected') || $('#sf-1-1').hasClass('selected'))
 		){
-			$('#done-btn-3').toggleClass('d-none')
+			$('#done-btn-3').removeClass('d-none')
 		}
 	}, delay)
 
