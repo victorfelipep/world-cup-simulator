@@ -26,7 +26,7 @@ let grupoA = [
 	{pais: 'Netherlands', sigla:'NED', bandeira:'https://flagcdn.com/w80/nl.png', pontos:0}
 ]
 let grupoB = [
-	{pais: 'England', sigla:'ENG', bandeira:'https://countryflagsapi.com/svg/gb-eng', pontos:0},
+	{pais: 'England', sigla:'ENG', bandeira:'https://flagcdn.com/w80/gb-eng.png', pontos:0},
 	{pais: 'IR Iran', sigla:'IRN', bandeira:'https://flagcdn.com/w80/ir.png', pontos:0},
 	{pais: 'USA', sigla:'USA', bandeira:'https://flagcdn.com/w80/us.png', pontos:0},
 	{pais: 'Euro Play-off', sigla:'EUR', bandeira:'img/earth.png', pontos:0}
